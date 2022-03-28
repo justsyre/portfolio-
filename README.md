@@ -1,4 +1,4 @@
-# portfolio-
+# portfolio
 This will be a continuous project and will be improved as I keep learning more and more.
 
 Planning to use a Flask Backend paired with ReactJS and TailwindCSS as a Frontend
