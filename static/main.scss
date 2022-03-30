@@ -3,26 +3,87 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    scroll-behavior: smooth;
+header{
+    height: 100vh;
+    overflow: hidden;
 }
 
-.nav-dot:hover span {
-    opacity: 1;
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 3rem 18rem;
 }
 
-.left-percentage {
-    left: 5%;
+.sect{
+    transform: translateY(-100%);
+    transition: all .4s ease-in-out;
 }
 
-.h-screen-partial {
-    height: 80vh;
+.hero{
+    display: none;
+    transform: translateY(0) scale(1);
+    @apply bg-fuchsia-300
 }
 
-.nav-dot {
-    transition: background 200ms, border-color 200ms;
+.about{
+    display: none;
+    transform: translateY(0) scale(1);
+    @apply bg-fuchsia-700
 }
 
-.selected-circle {
-    @apply border-matte-black bg-matte-black;
+.experience{
+    display: none;
+    transform: translateY(0) scale(1);
+    @apply bg-rose-300
+}
+
+.portfolio{
+    display: none;
+    transform: translateY(0) scale(1);
+    @apply bg-rose-700
+}
+
+.hire-me{
+    display: none;
+    transform: translateY(0) scale(1);
+    @apply bg-orange-900
+}
+
+.active{
+    display: block;
+}
+
+/* Navigation controls */
+.active-btn{
+    background-color: #4169E1;
+    transition: all .4s ease-in-out;
+}
+.mnav{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+.control {
+    cursor: pointer;
+    padding: 1rem;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+
+    i{
+        font-size: 1.2rem;
+        pointer-events: none;
+    }
 }

@@ -4,17 +4,17 @@ module.exports = {
     '../templates/**/*.{html, js}',
   ],
   theme: {
-    colors:{
-      'body': '#FDD935',
-      'matte-black': '#1C1C1C',
-      'white': '#F1F1F1',
-      'btn-theme':'#1C1C1C',
-      'selected-text': '#114084'
+    extend:{
+      colors:{
+        'primariy-color': '#FDD935',
+        'secondary-color': '#1C1C1C',
+        'selected': '#4169E1',
+        'transparent': 'transparent',
+      },
     },
-
+    
     fontFamily: {
       poppins: ['Poppins', 'Sans-Serif'],
     },
-  },
-  plugins: [],
+  }
 }
