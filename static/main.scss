@@ -13,7 +13,7 @@ section{
     width: 100%;
     position: absolute;
     left: 0;
-    right: 0;
+    top: 0;
     padding: 3rem 18rem;
 }
 
@@ -25,7 +25,6 @@ section{
 .hero{
     display: none;
     transform: translateY(0) scale(1);
-    @apply bg-fuchsia-300
 }
 
 .about{
@@ -54,6 +53,16 @@ section{
 
 .active{
     display: block;
+    animation: scaleAnim 2s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0)
+        }
+
+        100%{
+            transform: translateY(0) scaleY(1)
+        }
+    }
 }
 
 /* Navigation controls */
